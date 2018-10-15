@@ -5,7 +5,10 @@
      tal:define="image view/get_image_data">
 
 <div class="faqblock">
-  <input type="checkbox" tal:attributes="id string:uid-${here/UID}">
+  <input type="checkbox"
+       tal:attributes="id string:uid-${here/UID};
+                       checked view/is_reload">
+
   <label tal:attributes="for  string:uid-${here/UID}" tal:condition="view/block_title">
     <h2 tal:condition="view/block_title">
       <i class="fa fa-angle-right"></i>
