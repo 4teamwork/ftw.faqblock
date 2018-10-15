@@ -10,8 +10,10 @@
 
     <include package=".contents"/>
     <include package=".browser"/>
+
     <include file="lawgiver.zcml" zcml:condition="installed ftw.lawgiver" />
     <include file="permissions.zcml" />
+    <include file="resources.zcml" />
 
     <genericsetup:registerProfile
         name="default"
