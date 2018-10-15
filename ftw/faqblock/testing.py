@@ -9,7 +9,7 @@ from plone.testing import z2
 from zope.configuration import xmlconfig
 
 
-class FaqblockLayer(PloneSandboxLayer):
+class FaqBlockLayer(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE, BUILDER_LAYER)
 
     def setUpZope(self, app, configurationContext):
@@ -27,7 +27,7 @@ class FaqblockLayer(PloneSandboxLayer):
         applyProfile(portal, 'ftw.faqblock:default')
 
 
-FAQBLOCK_FIXTURE = FaqblockLayer()
+FAQBLOCK_FIXTURE = FaqBlockLayer()
 FAQBLOCK_FUNCTIONAL = FunctionalTesting(
     bases=(FAQBLOCK_FIXTURE,
            set_builder_session_factory(functional_session_factory)),
