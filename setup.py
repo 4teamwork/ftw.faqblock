@@ -45,8 +45,11 @@ setup(
 
     install_requires=[
         'Plone',
-        'setuptools',
+        'ftw.simplelayout [contenttypes]',
         'ftw.upgrade',
+        'plone.app.dexterity',
+        'plone.dexterity',
+        'setuptools',
     ],
 
     tests_require=tests_require,

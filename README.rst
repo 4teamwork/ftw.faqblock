@@ -4,7 +4,12 @@
 Introduction
 ============
 
-### INTRODUCTION ###
+
+This package is an addon for `ftw.simplelayout <http://github.com/4teamwork/ftw.simplelayout>`_. Please make sure you
+already installed ``ftw.simplelayout`` on your plone site before installing this addon.
+
+FaqBlock provides the integration of an FAQ styled collapsible block on a page
+powered by ftw.simplelayout. It uses the existing functionality of ``ftw.simplelayout.TextBlock``.
 
 Compatibility
 -------------
