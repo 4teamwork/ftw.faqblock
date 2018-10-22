@@ -8,7 +8,7 @@
 
     <browser:resourceDirectory name="ftw.faqblock" directory="resources" />
 
-    <theme:resources profile="ftw.faqblock:default" slot="theme">
+    <theme:resources profile="ftw.faqblock:default" slot="addon">
         <theme:scss file="resources/scss/faqblock.scss" />
     </theme:resources>
 
