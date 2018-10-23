@@ -5,7 +5,8 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Title must be set [Nachtalb]
+- Add possibility to just add an image instead of having to add text [Nachtalb]
 
 
 1.0.0 (2018-10-22)

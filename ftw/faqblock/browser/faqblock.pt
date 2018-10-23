@@ -10,7 +10,7 @@
                        checked view/is_reload">
 
   <label tal:attributes="for  string:uid-${here/UID}" tal:condition="view/block_title">
-    <h2 tal:condition="view/block_title">
+    <h2>
       <i class="fa fa-angle-right"></i>
       <span tal:content="view/block_title" />
     </h2>
@@ -44,7 +44,7 @@
 
     <div class="faqtext" tal:content="structure here/text/output | nothing" />
   </div>
-  <p tal:condition="python: view.can_add and not (here.title or here.text)"
+  <p tal:condition="python: view.can_add and not (here.text or here.image)"
        i18n:translate="">This block is empty.</p>
 </div>
 </html>
