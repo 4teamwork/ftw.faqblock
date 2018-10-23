@@ -44,7 +44,7 @@
 
     <div class="faqtext" tal:content="structure here/text/output | nothing" />
   </div>
-  <p tal:condition="python: view.can_add and not (here.title or here.text)"
+  <p tal:condition="python: view.can_add and not (here.text or here.image)"
        i18n:translate="">This block is empty.</p>
 </div>
 </html>
