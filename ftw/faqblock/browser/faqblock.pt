@@ -10,7 +10,7 @@
                        checked view/is_reload">
 
   <label tal:attributes="for  string:uid-${here/UID}" tal:condition="view/block_title">
-    <h2 tal:condition="view/block_title">
+    <h2>
       <i class="fa fa-angle-right"></i>
       <span tal:content="view/block_title" />
     </h2>
