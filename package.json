@@ -1,0 +1,18 @@
+{
+    "name": "ftw.faqblock",
+    "version": "1.0.0",
+    "description": "Loader for the plone 5 resources.",
+    "repository": "git@github.com:4teamwork/ftw.faqblock.git",
+    "author": "4teamwork AG <info@4teamwork.ch>",
+    "license": "GPL2",
+    "private": true,
+    "devDependencies": {
+        "chokidar-cli": "^2.1.0",
+        "requirejs": "^2.3.6"
+    },
+    "scripts": {
+        "build": "r.js -o build.js",
+        "build-js": "r.js -o build.js",
+        "watch": "chokidar \"./ftw/faqblock/resources/js/*.js\" -i \"**/*-compiled.js\" -c \"r.js -o build.js\""
+    }
+}
