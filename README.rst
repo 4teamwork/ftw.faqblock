@@ -14,7 +14,8 @@ powered by ftw.simplelayout. It uses the existing functionality of ``ftw.simplel
 Compatibility
 -------------
 
-Plone 4.3.x
+- Plone 4.3
+- Plone 5.1
 
 
 Installation
