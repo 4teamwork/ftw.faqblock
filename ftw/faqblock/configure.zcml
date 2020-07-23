@@ -16,6 +16,7 @@
     <include file="resources.zcml" />
 
     <genericsetup:registerProfile
+        zcml:condition="not-have plone-5"
         name="default"
         title="ftw.faqblock default"
         directory="profiles/default"
@@ -23,9 +24,27 @@
         />
 
     <genericsetup:registerProfile
+        zcml:condition="have plone-5"
+        name="default"
+        title="ftw.faqblock default"
+        directory="profiles/default-plone5"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        zcml:condition="not-have plone-5"
         name="uninstall"
         title="ftw.faqblock:uninstall"
         directory="profiles/uninstall"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        />
+
+    <genericsetup:registerProfile
+        zcml:condition="have plone-5"
+        name="uninstall"
+        title="ftw.faqblock:uninstall"
+        directory="profiles/uninstall-plone5"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
         />
