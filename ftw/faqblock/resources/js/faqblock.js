@@ -10,7 +10,7 @@
   $(function() {
     // Open FAQ Block when location hash is set
     if (window.location.hash) {
-      jQuery('.ftw-faqblock-faqblock #uid-' + window.location.hash.substring(1)).attr('checked', true)
+      jQuery(window.location.hash + '~ .sl-block-content .faqblock > input').attr('checked', true)
     }
   });
 }));

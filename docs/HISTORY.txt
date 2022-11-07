@@ -5,7 +5,7 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Well... use name instead of uid as location hash. [mathias.leimgruber]
 
 
 1.2.1 (2022-11-07)
