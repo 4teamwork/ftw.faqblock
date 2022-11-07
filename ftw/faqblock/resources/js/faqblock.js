@@ -9,7 +9,8 @@
 }(typeof self !== 'undefined' ? self : this, function ($) {
   $(function() {
     // Open FAQ Block when location hash is set
-    if (window.location.hash)
-      jQuery('.ftw-faqblock-faqblock > ' + window.location.hash + ' + div .faqblock > input[type=checkbox]').attr('checked', true)
+    if (window.location.hash) {
+      jQuery('.ftw-faqblock-faqblock #uid-' + window.location.hash.substring(1)).attr('checked', true)
+    }
   });
 }));

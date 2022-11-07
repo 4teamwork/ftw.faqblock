@@ -4,5 +4,6 @@
         jquery: "empty:",
     },
     name: "main",
-    out: "./ftw/faqblock/resources/js/faqblock-compiled.js"
+    out: "./ftw/faqblock/resources/js/faqblock-compiled.js",
+    // optimize: "none",
 })
